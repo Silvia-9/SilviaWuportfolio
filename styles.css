@@ -17,7 +17,7 @@ html {
     align-items: center;
     text-align: center;
     padding: 0;
-    background-image: url("Photos/lavender.png");
+    background-image: url("lavender.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -315,7 +315,7 @@ h1 {
     width: 100%;
     height: 200px;
     box-sizing: border-box;
-    background-image: url("Photos/lavender bushes.png");
+    background-image: url("lavender bushes.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
