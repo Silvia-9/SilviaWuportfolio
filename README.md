@@ -1,6 +1,4 @@
-# Silvia Wu's Portfolio 🌟
-
-🙂 Welcome, everyone!     
+# Silvia Wu's Portfolio 🌟   
 
 ## Outline
 - Professional summary
@@ -9,4 +7,3 @@
 - Publications
 
 
-Thanks for visiting! 😊
