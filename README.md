@@ -2,8 +2,11 @@
 
 ## Outline
 - Professional summary
+- Projects
 - Work experience
+- Volunteer experience
 - Educational background
-- Publications
+- Conference Paper
+- Dissertations
 
 
