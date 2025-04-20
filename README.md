@@ -1,4 +1,4 @@
-# Silvia Wu's Portfolio 🌟   
+# **Silvia Wu's** Portfolio 🌟   
 
 ## Outline
 - Professional summary
