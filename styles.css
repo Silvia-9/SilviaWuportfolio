@@ -106,10 +106,24 @@ header h1 {
     cursor: pointer; /* Add a pointer cursor for interactivity */
 }
 
+.personal-website-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
 .personal-website-photo {
-    width: 8em; /* Increase the size of the personal website icon */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Add a pointer cursor for interactivity */
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.personal-website-photo:hover {
+  transform: scale(1.1);
 }
 
 .linkedin-container {
@@ -373,6 +387,27 @@ h1 {
     #footer {
         font-size: 12px; /* Adjust footer font size for mobile */
     }
+}
+
+.personal-website-link-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px 0 0;
+}
+
+.personal-website-link img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.personal-website-link img:hover {
+  transform: scale(1.1);
 }
 
 
