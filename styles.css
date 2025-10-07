@@ -70,10 +70,18 @@ header h1 {
 }
 
 .profile-photo {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Increase the size */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure proper image coverage */
+    border-radius: 15px; /* Rounded corners instead of circular */
+    border: 3px solid #2739c5; /* Green border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.profile-photo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
 
 .info-container {
@@ -149,23 +157,28 @@ header h1 {
     margin: 10px 0;
 }
 
-/* Responsive Design for About Me Section */
+/* Responsive Design for Profile Photo */
 @media screen and (max-width: 768px) {
-    .aboutme-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-container {
-        text-align: center;
-    }
-
     .profile-photo {
-        width: 120px;
+        width: 150px; /* Smaller size for tablets */
+        height: 150px;
     }
+    
+    .aboutme-container {
+        flex-direction: column; /* Stack photo and text vertically on tablets */
+        text-align: center;
+    }
+    
+    .photo-container {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Add bottom margin instead */
+    }
+}
 
-    .linkedin-photo {
-        width: 30px; /* Adjust LinkedIn icon size for smaller screens */
+@media screen and (max-width: 480px) {
+    .profile-photo {
+        width: 120px; /* Even smaller for mobile */
+        height: 120px;
     }
 }
 
@@ -397,9 +410,8 @@ h1 {
 }
 
 .personal-website-link img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   transition: transform 0.2s;
   vertical-align: middle;
@@ -407,6 +419,46 @@ h1 {
 }
 
 .personal-website-link img:hover {
+  transform: scale(1.1);
+}
+
+.youtube-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.youtube-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.youtube-icon:hover {
+  transform: scale(1.1);
+}
+
+.youtube-link-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px 0 0;
+}
+
+.youtube-photo {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  transition: transform 0.2s;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.youtube-photo:hover {
   transform: scale(1.1);
 }
 
