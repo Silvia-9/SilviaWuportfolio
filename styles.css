@@ -422,7 +422,7 @@ h1 {
   transform: scale(1.1);
 }
 
-.youtube-link {
+.youtube-link {}
   display: inline-block;
   vertical-align: middle;
   margin-left: 6px;
